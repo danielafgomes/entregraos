@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const translations = {
+    brunchPhotoLabel: 'Brunch photograph', brunchPhotoAlt: 'Placeholder for a brunch photograph',
     quickVisit: 'Location and opening hours',
     skip: 'Skip to content', home: 'Entre Grãos — home', mainNav: 'Main navigation', mobileNav: 'Mobile navigation', openMenu: 'Open menu', closeMenu: 'Close menu', navTable: 'At the table', navSpace: 'Our space', navVisit: 'Visit us', directions: 'Get directions',
     heroEyebrow: "Entre Grãos · Rua da Cale, Fundão", heroTitle1: "Coffee, lunch", heroTitle2: "& brunch in Fundão.", heroDescription: "Illy coffee, homemade cakes and cinnamon rolls. For lunch, soup, sandwiches with a vegan option and seasonal choices.", discover: 'Discover what we serve', lunchWeek: 'Lunch from Monday to Friday', sandwichAlt: 'A sandwich served at Entre Grãos', heroPhotoCaption: "Our sandwiches, served at the table.", moments: "What we serve at Entre Grãos", stripCoffee: "Coffee and homemade cakes", stripLunch: 'Lunch during the week', stripBrunch: 'Saturday brunch',
