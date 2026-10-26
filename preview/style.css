@@ -134,14 +134,14 @@ button {
 .language-switch span {
   opacity:.4
 }
-.language-switch button {
+.language-switch a {
   background:none;
   border:0;
   color:var(--muted);
   padding:10px 2px;
   min-height:44px
 }
-.language-switch button[aria-pressed=true] {
+.language-switch a[aria-current=page] {
   color:var(--green);
   font-weight:bold;
   text-decoration:underline;
@@ -873,7 +873,7 @@ h2 {
   .language-switch {
     font-size:12px
   }
-  .language-switch button {
+  .language-switch a {
     padding:10px 5px
   }
   .menu-toggle {
@@ -1438,7 +1438,7 @@ h2 {
 .moment .text-link {
   font-size: 14px;
 }
-.language-switch button {
+.language-switch a {
   min-width: 32px;
 }
 .eyebrow,
@@ -1831,3 +1831,9 @@ h2 {
     gap: 10px;
   }
 }
+
+/* Native language links and keyboard access work independently of translations. */
+[hidden] { display: none !important; }
+.language-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+.visit-section a:focus-visible { outline-color: var(--cream); }
+#main:focus { outline: none; }
