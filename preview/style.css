@@ -1837,3 +1837,51 @@ h2 {
 .language-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
 .visit-section a:focus-visible { outline-color: var(--cream); }
 #main:focus { outline: none; }
+
+/* Keep the social profile visible without competing with directions. */
+.desktop-nav { gap: clamp(18px, 2.1vw, 30px); margin-left: 2%; }
+.desktop-nav a { white-space: nowrap; }
+.journal-handle { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.journal-section .instagram-link { flex-shrink: 0; }
+@media (max-width: 1050px) {
+  .desktop-nav { margin-left: 0; gap: 18px; }
+  .header-directions { padding: 12px; gap: 12px; }
+}
+
+/* Social profiles form a separate group; the main navigation stays local. */
+.header-actions { gap: 18px; }
+.header-social { display: flex; align-items: center; gap: 0; }
+.header-social a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
+.social-icon { display: block; flex: 0 0 22px; width: 22px; height: 22px; }
+.header-social a:hover, .footer-social a:hover { color: var(--clay); }
+.site-footer { display: grid; grid-template-columns: 110px 1fr auto; column-gap: 24px; row-gap: 4px; }
+.site-footer .brand { grid-column: 1; grid-row: 1 / 3; }
+.site-footer > p { grid-column: 2; grid-row: 1; }
+.footer-social { display: flex; flex-wrap: wrap; gap: 8px 22px; grid-column: 3; grid-row: 1; }
+.footer-social a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 14px; }
+.site-footer .copyright { grid-column: 2 / 4; grid-row: 2; justify-self: start; }
+@media (min-width: 761px) and (max-width: 900px) {
+  .header-directions { display: none; }
+}
+@media (max-width: 760px) {
+  .site-header { height: 112px; }
+  .header-actions { display: grid; grid-template-columns: 1fr auto; column-gap: 12px; row-gap: 0; }
+  .header-actions .language-switch { grid-column: 1; grid-row: 1; }
+  .header-actions .menu-toggle { grid-column: 2; grid-row: 1; }
+  .header-social { grid-column: 1 / 3; grid-row: 2; justify-content: flex-end; }
+  .mobile-nav:not([hidden]) { top: 112px; }
+  .site-footer { grid-template-columns: 1fr; gap: 10px; }
+  .site-footer .brand, .site-footer > p, .footer-social, .site-footer .copyright { grid-column: 1; grid-row: auto; }
+}
+
+/* On small screens social profiles belong to the expanded menu. */
+.mobile-social { display: flex; align-items: center; gap: 24px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); }
+.mobile-nav .mobile-social a { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; padding: 8px 0; border-bottom: 0; }
+@media (max-width: 760px) {
+  .site-header { height: 82px; }
+  .header-actions { display: flex; align-items: center; gap: 18px; }
+  .header-social { display: none; }
+  .mobile-nav:not([hidden]) { top: 82px; }
+}
+
+.mobile-nav > a:last-of-type { border-bottom: 0; }
