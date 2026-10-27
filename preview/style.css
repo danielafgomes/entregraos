@@ -1,3 +1,5 @@
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/newsreader-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url('assets/fonts/newsreader-400-italic.woff2') format('woff2')}
 :root {
   --cream:#f6f2e8;
   --paper:#fffcf5;
@@ -8,7 +10,7 @@
   --clay:#a9583f;
   --sage:#e3e8d7;
   --sans:Arial,Helvetica,sans-serif;
-  --serif:Georgia,'Times New Roman',serif
+  --serif:'Newsreader',Georgia,'Times New Roman',serif
 }
 * {
   box-sizing:border-box
@@ -195,7 +197,7 @@ h1 {
   font-family:var(--serif);
   font-size:clamp(50px,5.7vw,86px);
   line-height:1.04;
-  letter-spacing:-3.5px;
+  letter-spacing:0;
   font-weight:400
 }
 h1 span,h1 em {
@@ -355,7 +357,7 @@ h2 {
   font-weight:400;
   font-size:clamp(35px,3.45vw,50px);
   line-height:1.12;
-  letter-spacing:-1.6px
+  letter-spacing:0
 }
 .section-intro {
   max-width:265px;
@@ -401,7 +403,7 @@ h2 {
   font-size:48px;
   line-height:1.1;
   font-weight:400;
-  letter-spacing:-1.8px;
+  letter-spacing:0;
   margin:25px 0 21px
 }
 .lunch-copy h3 span,.lunch-copy h3 em {
@@ -501,7 +503,7 @@ h2 {
   font-family:var(--serif);
   font-weight:400;
   font-size:34px;
-  letter-spacing:-1px;
+  letter-spacing:0;
   line-height:1.1;
   margin-bottom:20px
 }
@@ -711,7 +713,7 @@ h2 {
 .footer-wordmark {
   font-family:var(--serif);
   font-size:26px;
-  letter-spacing:-1px;
+  letter-spacing:0;
   display:flex;
   gap:17px;
   align-items:center
@@ -789,7 +791,7 @@ h2 {
   }
   h1 {
     font-size:60px;
-    letter-spacing:-2.5px
+    letter-spacing:0
   }
   .hero-copy .eyebrow {
     font-size:8px
@@ -935,7 +937,7 @@ h2 {
   h1 {
     font-size:clamp(45px,11.7vw,76px);
     line-height:1.05;
-    letter-spacing:-2px
+    letter-spacing:0
   }
   .hero-description {
     font-size:12px;
@@ -1015,7 +1017,7 @@ h2 {
   }
   h2 {
     font-size:35px;
-    letter-spacing:-1.2px
+    letter-spacing:0
   }
   .section-intro {
     max-width:310px;
@@ -1315,7 +1317,7 @@ h2 {
 /* The headline names the café offering and location in both languages. */
 .hero h1 {
   font-size: clamp(44px, 4.25vw, 64px);
-  letter-spacing: -2.4px;
+  letter-spacing:0;
 }
 .hero h1 em {
   white-space: normal;
@@ -1323,7 +1325,7 @@ h2 {
 @media (max-width: 760px) {
   .hero h1 {
     font-size: clamp(32px, 9.2vw, 44px);
-    letter-spacing: -1.4px;
+    letter-spacing:0;
   }
 }
 
@@ -1885,3 +1887,14 @@ h2 {
 }
 
 .mobile-nav > a:last-of-type { border-bottom: 0; }
+
+/* Approved shared practical details, with native links and no external embeds. */
+.hero-actions { flex-wrap: wrap; }
+.hero-call { display:inline-flex; align-items:center; gap:12px; min-height:44px; padding:8px 0; border-bottom:1px solid var(--line); font-size:14px; }
+.hero-call svg { flex:none; }
+.daily-menu { margin-top:26px; padding-bottom:23px; border-bottom:1px solid #5a7060; }
+.daily-menu h3 { font-family:var(--serif); font-size:28px; font-weight:400; letter-spacing:0; margin-bottom:12px; }
+.daily-menu p { font-size:15px; line-height:1.7; max-width:340px; color:#d5dace; }
+.daily-menu a { display:inline-flex; align-items:center; gap:12px; min-height:44px; margin-top:7px; font-size:15px; }
+.visit-info { align-content:start; }
+@media(max-width:760px) { .mobile-social { flex-wrap:wrap; gap:10px 20px; } .daily-menu { margin-top:24px; } }
