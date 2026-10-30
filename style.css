@@ -10,3 +10,10 @@
 @media(max-width:700px){.hero-actions{margin-top:24px;gap:24px}.hero-actions .button{gap:24px;padding-inline:18px}}
 
 .menu-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;padding:8px 0;font-size:14px;border-bottom:1px solid var(--line)}
+
+/* Keep the menu discoverable in the compact header, including on phones. */
+.site-header .menu-link{border-bottom:0;white-space:nowrap}
+@media(max-width:700px){.site-header .header-links{gap:12px}.site-header .menu-link{font-size:13px}}
+@media(max-width:360px){.site-header.wrap{width:90%}.site-header .header-links{gap:8px}}
+/* Root-absolute assets allow GitHub Pages to serve this at missing nested URLs. */
+.error-main{max-width:760px;padding-block:65px 80px}.error-main .eyebrow{margin-bottom:16px}.error-main h1,.error-main h2{font-family:'Newsreader',Georgia,serif;font-weight:400;letter-spacing:0;line-height:1.12}.error-main h1{font-size:clamp(38px,6vw,60px)}.error-main h2{font-size:30px}.error-main p{font-size:16px;line-height:1.75;color:var(--muted);margin-top:18px}.error-links{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:16px}.error-links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}.error-english{margin-top:40px;padding-top:30px;border-top:1px solid var(--line)}
